@@ -1,0 +1,491 @@
+
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:400,300,700&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic);
+@font-face {
+    font-family: EtelkaTextPro; /* имя шрифта для CSS правил */
+    src: local("EtelkaTextPro"), /* проверяем наличие шрифта в ОС пользователя */
+    url(../fonts/Etelka-Text-Pro_16187.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+
+}
+h1{
+    /*font-family: "PT Sans",sans-serif;*/
+    /*font: bold 35px 'Open Sans Condensed', sans-serif;*/
+    font: bold 55px 'EtelkaTextPro', sans-serif;
+    /*font-size: 2.5em;*/
+}
+h2{
+    /*font: bold 30px 'Open Sans Condensed', sans-serif;*/
+    font: bold 40px 'Ubuntu', sans-serif;
+}
+.h2_p{
+    padding: 10px 40px;
+}
+h3{
+    font: bold 28px 'Open Sans Condensed', sans-serif;
+}
+hr{
+    border-color: #68b4e5;
+    border-width: 3px;
+    max-width: 50px;
+}
+hr.light{
+    border-color: #F05F40;
+}
+a{
+    -webkit-transform: all 0.35s;
+    -moz-transform: all 0.35s;
+    transform: all 0.35s;
+    color: #f05f40;
+    outline: none; /* Убираем границу вокруг ссылок  */
+}
+a:hover,a:focus{
+    color: #eb3812;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+section{
+    padding: 100px;
+}
+aside{
+    padding: 50px;
+}
+
+input {
+    margin: 0px 17px 10px;
+    padding: 0px 0px 0px 50px;
+    height: 45px;
+    border: 1px solid #c1c1c0;
+    width: 300px;
+}
+
+input.name_call {
+    background: url(../img/name.jpg) no-repeat #fff;
+}
+
+input.phone_call {
+    background: url(../img/phone.jpg) no-repeat #fff;
+}
+
+.no-padding{
+  padding: 0;
+}
+.no-margin{
+    margin-left: 0;
+    margin-right: 0;
+}
+#header{
+/*background-color: whitesmoke;*/
+    /*background: url("../img/bg_sector1.jpg");*/
+    /*background: url("../img/bg1.png");*/
+    background: url("../img/bg_sector2.jpg");
+    color: white;
+    height: 600px;
+    /*padding-bottom: 50px;*/
+
+}
+#header .row img{
+    width: 80%;
+    float: left;
+}
+.white{
+    color: white;
+}
+.blue{
+    color: #68b4e5;
+}
+.orange{
+    color: #F05F40;
+}
+.black{
+    color: black;
+}
+.bg_blue{
+    background-color: #68b4e5;
+}
+.bg_orange{
+    background-color: #F05F40;
+}
+.bg_color{
+    background-color: #405883;
+    color: white;
+    border-radius: 10px;
+}
+.bg_table{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    /*border: 1px solid black;*/
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+.uppercase{
+    text-transform:uppercase;
+}
+.bold{
+    font-weight: bold;
+}
+.navbar-default {
+    background-color: white;
+    border-color: #e7e7e7;
+    border-bottom: 5px solid #68b4e5;
+
+}
+.navbar-default .navbar-nav > li > a{
+    color: #46b8da;
+    font-weight: bold;
+
+
+}
+.navbar-default .navbar-nav > li > a:hover,a:focus{
+    color: #F05F40;
+    font-weight: bold;
+
+}
+.logo{
+    width: 100px;
+}
+.arrow img{
+    display: block;
+    margin: 0 auto;
+    top: -50px;
+    position: relative;
+    width: 100px;
+    border: 3px solid #68b4e5;
+    border-radius: 50%;
+}
+.arrow img:hover {
+    border-color: #F05F40;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+    -webkit-text-shadow: 0 1px 1px #ffffff;
+    -moz-text-shadow: 0 1px 1px #ffffff;
+    text-shadow: 0 1px 1px #ffffff;
+}
+.header_in1{
+    font: bold 55px 'EtelkaTextPro', sans-serif;
+    background-color: rgba(104, 180, 229, 0.9);
+    line-height: 55px;
+    margin-top: 120px;
+    padding: 40px 0px;
+
+}
+.header_in2{
+    background-color: rgba(240, 95, 64, 0.9);
+    font: bold 40px 'Ubuntu', sans-serif;
+    line-height: 40px;
+    padding: 40px 0px;
+}
+/*.order{*/
+    /*background-color:#405883;*/
+    /*color: white;*/
+    /*!*border-radius: 10px;*!*/
+/*}*/
+/*.order_ins{*/
+    /*padding: 40px 20px;*/
+/*}*/
+/*.order input {*/
+    /*margin-bottom: 10px;*/
+/*}*/
+/*.order button {*/
+    /*width: 100%;*/
+    /*font-size: 23px;*/
+/*}*/
+.tab-price{
+    color: #666666;
+    background: #f5f5f5;
+    -webkit-box-shadow: 0px 1px 2px rgba(112,112,112,0.67),inset 1px 1px 0px #ffffff;
+    box-shadow: 0px 1px 2px rgba(112,112,112,0.67),inset 1px 1px 0px #ffffff;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    clear: both;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+.tab-price:hover{
+    background-color: white;
+}
+.tab-price p {
+    margin-bottom: 0px;
+}
+.tab-price p span{
+    font-size: 22px;
+    font-weight: bold;
+}
+.tab-price hr{
+    border-color: #d7d4d4;
+    border-width: 1px;
+    max-width: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.tab-price div{
+    /*padding: 20px 0;*/
+}
+.tab-price .dot{
+    line-height: 75px;
+    border-right: 1px solid #FFF;
+    -webkit-box-shadow: inset -1px 0px 0px 0px #DFDFDF,inset 0px 0px 0px #ffffff;
+    box-shadow: inset -1px 0px 0px 0px #DFDFDF,inset 0px 0px 0px #ffffff;
+}
+.tab-price .info_gbo{
+    color: #666666;
+    font-size: 12pt;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    padding-top: 40px;
+    width: 250px;
+    float: left;
+    height: 128px;
+    border-right: 1px solid #FFF;
+    -webkit-box-shadow: inset -1px 0px 0px 0px #DFDFDF,inset 0px 0px 0px #ffffff;
+    box-shadow: inset -1px 0px 0px 0px #DFDFDF,inset 0px 0px 0px #ffffff;
+}
+.tab-price .flag{
+    float: left;
+    margin-right: 15px;
+    margin-top: -5px;
+}
+.tab-price .slogan{
+
+}
+.tab-price .more{
+    color: #098FC7;
+    font-size: 10pt;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    border-bottom: 1px dotted #098FC7;
+    cursor: pointer;
+    display: inline-block
+}
+.tab-price .strana > div{
+    border: #FFF 1px solid;
+    -webkit-box-shadow: #612b03 0px 0px 3px -1px;
+    box-shadow: #612b03 0px 0px 3px -1px;
+    background: #fff;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    position: absolute;
+    width: 90px;
+    margin-left: -25px;
+    z-index: 10;
+    top: -10px;
+    display: block;
+    padding: 5px 0px;
+    text-align: center;
+    color: #3a3a3a;
+    font-size: 10pt;
+    font-family: 'Ubuntu';
+    font-style: italic;
+    font-weight: 500;
+    display: none;
+    position: absolute;
+    line-height: 16px;
+}
+.info_gbo:hover .strana > div {
+    display: block;
+}
+
+.strana > div:after, .strana > div:before{
+    top:27px;
+    left:50%;
+    border:solid transparent;
+    content:" ";
+    height:0;
+    width:0;
+    position:absolute;
+    pointer-events:none;
+}
+.strana > div:after{
+    border-color:rgba(243,243,243,0);
+    border-top-color:#faf9f8;
+    border-width:8px;
+    margin-left:-8px;
+}
+.strana > div:before{
+    border-color:rgba(209,195,184,0);
+    border-top-color:#d1c3b8;
+    border-width:9px;
+    margin-left:-9px;
+}
+
+
+
+.tab-price .log{
+    line-height: 100px;
+}
+.tab-price button{
+    width: 170px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 22px;
+}
+.tab-price .prosto_zakaz{
+    line-height: 80px;
+}
+.tab-price .rasrochka{
+    border-bottom: 1px dotted #098fc7;
+    color: #098fc7;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "EtelkaTextProRegular";
+    font-size: 16pt;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
+    margin-left: 23px;
+    margin-top: 15px;
+    position: relative;
+}
+.tab-price .credit::before{
+    background: url(/img/kredit-iconka.png) no-repeat 0px 0px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: -22px;
+    width: 16px;
+    height: 16px;
+}
+
+.js-radio{
+    width: 100%;
+    height: 32px;
+    border: none;
+    border-radius: 0;
+    background: url(/img/checkox.png) no-repeat 50% 2px !important;
+    box-shadow: none;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 6px;
+    float: left;
+    margin-right: 8px;
+}
+.js-radio:hover{
+    background-position: 50% -48px !important;
+}
+.checked, .checked:hover {
+    background-position: 50% -98px !important;
+}
+
+.tab-price-info{
+display: none;
+}
+.tab-price-info-body {
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    padding: 30px 0px 25px;
+    margin: 0px 30px;
+    border-top: 1px solid #D7D7D7;
+}
+.tab-price-info-body p{
+    font-size: 14px;
+}
+.tab-price-info-body ul li{
+    background: url(/img/text-li.png) no-repeat 0px 4px;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-bottom: 7px;
+    font-size: 10pt;
+    list-style-type: none;
+}
+.open{
+    display: block;
+}
+/* Secondary  section */
+
+#razschet-stoimosty{
+    margin:80px 0;
+    background: url("/img/bg_section2.png") no-repeat center top;
+    background-size: contain;
+}
+.raschet-form {
+    margin-top: 40px;
+}
+.raschet-form input{
+    margin: 0px 17px 10px;
+    padding: 0px 0px 0px 20px;
+    height: 45px;
+    border: 1px solid #c1c1c0;
+    width: 100%;
+}
+.raschet-form input.name_call {
+    background: url(../img/grn.png) right no-repeat #fff;
+    background-size: 45px 45px;
+    background-position: right 10px top 0px;
+}
+.raschet-form input.count_litr {
+    background: url(../img/litr.png) right no-repeat #fff;
+    background-size: 45px 45px;
+    background-position: right 10px top 0px;
+}
+.raschet-form input.count_km {
+    background: url(../img/km.png) right no-repeat #fff;
+    background-size: 45px 45px;
+    background-position: right 10px top 0px;
+}
+.raschet-info{
+    top: 40px;
+    height: 105px;
+    position: relative;
+    left: 60px;
+    width: 530px;
+}
+.raschet-info .raschet-result-div{
+    position: relative;
+    z-index: 2;
+}
+.raschet-info span {
+    font-size: 28px;
+    color: white;
+}
+.raschet-result-bg{
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 105px;
+    webkit-transform: skew(-32deg);
+    -moz-transform: skew(-32deg);
+    -o-transform: skew(-32deg);
+    -ms-transform: skew(-32deg);
+    transform: skew(-32deg);
+    background-color: #F05F40;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.middle >div>div{
+    padding: 20px 0;
+}
+.middle h2{
+    margin: 0;
+
+}
+.middle .btn {
+    height: 45px;
+    width: 300px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
